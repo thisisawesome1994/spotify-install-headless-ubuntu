@@ -50,7 +50,15 @@ alias sound-service-0-8 snd-seq-oss
 alias sound-service-0-12 snd-pcm-oss
 
 ```
-5- Do following commands & reboot
+
+5- Edit /etc/modules and add:
+
+```
+snd-bcm2835
+snd-dummy
+
+```
+6- Do following commands & reboot
 ```
 depmod -a
 reboot now
